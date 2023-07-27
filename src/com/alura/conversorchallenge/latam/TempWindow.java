@@ -1,4 +1,4 @@
-package com.alura.conversor.latam;
+package com.alura.conversorchallenge.latam;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -15,16 +15,15 @@ public class TempWindow extends JFrame implements ActionListener, ItemListener{
         private JComboBox<String> comboTemp;
         private JLabel jLabelResultTemp;
         private JTextField textFieldDegrees;
-
         public TempWindow() {
             initComponents();
-            frameTemp.setTitle("Alura Conversor Challenge");
+            frameTemp.setTitle("Oracle One - Temperature");
             frameTemp.setIconImage(new ImageIcon("C:\\Users\\joseg\\Documents\\WorkSpace - Software Developer\\Conversor\\Images\\ExAppIcon.png").getImage());
-            frameTemp.setLocationRelativeTo(null);
             frameTemp.setBounds(0,0,550,350);
             frameTemp.setLayout(null);
             frameTemp.setResizable(false);
             frameTemp.setVisible(true);
+            frameTemp.setLocationRelativeTo(null);
             frameTemp.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         }
 
@@ -51,18 +50,18 @@ public class TempWindow extends JFrame implements ActionListener, ItemListener{
             frameTemp.add(comboTemp);
 
             buttonConvertTemp = new JButton("Convert");
-            buttonConvertTemp.setBounds(220, 170, 80, 20);
+            buttonConvertTemp.setBounds(220, 170, 80, 25);
             frameTemp.add(buttonConvertTemp);
-            buttonConvertTemp.addActionListener((ActionListener) this);
+            buttonConvertTemp.addActionListener(this);
 
             jLabelResultTemp = new JLabel();
             jLabelResultTemp.setBounds(245, 190, 80, 20);
             frameTemp.add(jLabelResultTemp);
 
             buttonExit = new JButton("Back");
-            buttonExit.setBounds(220, 220, 80, 20);
+            buttonExit.setBounds(220, 220, 80, 25);
             frameTemp.add(buttonExit);
-            buttonExit.addActionListener((ActionListener) this);
+            buttonExit.addActionListener(this);
         }
 
         public void itemStateChanged(ItemEvent e) {
@@ -98,13 +97,15 @@ public class TempWindow extends JFrame implements ActionListener, ItemListener{
                         }
                         default -> jLabelResultTemp.setText("");
                     }
-                    ;
-
                     jLabelResultTemp.setText(decimalFormat.format(resultTemp));
-                    JOptionPane.showMessageDialog(this,"Temperature: " + decimalFormat.format(resultTemp), "Confirmation", JOptionPane.INFORMATION_MESSAGE  );
+                    JOptionPane.showMessageDialog(this,"Temperature: " + decimalFormat.format(resultTemp), "Confirmation", JOptionPane.INFORMATION_MESSAGE);
                 } catch (NumberFormatException ex) {
                     JOptionPane.showMessageDialog(this, "Invalid amount entered", "Error", JOptionPane.ERROR_MESSAGE);
                 }
             }
         }
+    public static void main(String[] args) {
+        TempWindow tempWindow = new TempWindow();
+        tempWindow.setLocationRelativeTo(null);
+    }
 }

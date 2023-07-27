@@ -1,4 +1,4 @@
-package com.alura.conversor.latam;
+package com.alura.conversorchallenge.latam;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -22,17 +22,16 @@ public class ExWindow extends JFrame implements ActionListener, ItemListener {
     private static final double GBP_RATE = 0.21;
     private static final double JPY_RATE = 38.90;
     private static final double KRW_RATE = 356.00;
-
     public ExWindow() {
         initComponents();
-        frameEx.setTitle("Alura Conversor Challenge");
+        frameEx.setTitle("Oracle One - Currencies");
         frameEx.setIconImage(new ImageIcon("C:\\Users\\joseg\\Documents\\WorkSpace - Software Developer\\Conversor\\Images\\ExAppIcon.png").getImage());
-        frameEx.setLocationRelativeTo(null);
-        frameEx.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frameEx.setBounds(0,0,550,350);
         frameEx.setLayout(null);
         frameEx.setResizable(false);
         frameEx.setVisible(true);
+        frameEx.setLocationRelativeTo(null);
+        frameEx.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     private void initComponents() {
@@ -62,20 +61,17 @@ public class ExWindow extends JFrame implements ActionListener, ItemListener {
         comboExchange.setBounds(160, 140, 210, 20);
         frameEx.add(comboExchange);
 
-
         buttonConvert = new JButton("Convert");
-        buttonConvert.setBounds(220, 170, 80, 20);
+        buttonConvert.setBounds(220, 170, 80, 25);
         frameEx.add(buttonConvert);
         buttonConvert.addActionListener((ActionListener) this);
-
 
         jLabelResult = new JLabel();
         jLabelResult.setBounds(245, 190, 80, 20);
         frameEx.add(jLabelResult);
 
-
         buttonBack = new JButton("Back");
-        buttonBack.setBounds(220, 220, 80, 20);
+        buttonBack.setBounds(220, 220, 80, 25);
         frameEx.add(buttonBack);
         buttonBack.addActionListener((ActionListener) this);
     }
@@ -118,6 +114,9 @@ public class ExWindow extends JFrame implements ActionListener, ItemListener {
             }
         }
     }
-
+    public static void main(String[] args) {
+        ExWindow exWindow = new ExWindow();
+        exWindow.setLocationRelativeTo(null);
+    }
 }
 

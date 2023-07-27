@@ -1,31 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="74d9ac3a-13c2-4d02-9bc3-078dfbf3d479" name="Changes" comment="" />
+    <list default="true" id="74d9ac3a-13c2-4d02-9bc3-078dfbf3d479" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alura/conversorchallenge/latam/AppConversor.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alura/conversorchallenge/latam/AppConversor.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alura/conversorchallenge/latam/AppConversor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alura/conversorchallenge/latam/AppConversor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alura/conversorchallenge/latam/DistWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alura/conversorchallenge/latam/DistWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alura/conversorchallenge/latam/ExWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alura/conversorchallenge/latam/ExWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alura/conversorchallenge/latam/TempWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alura/conversorchallenge/latam/TempWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alura/conversorchallenge/latam/TimeZoneWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alura/conversorchallenge/latam/TimeZoneWindow.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2SlXU958q6VQkhnfqJw1ggv0H1W" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "735",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "onboarding.tips.debug.path": "C:/Users/joseg/Documents/WorkSpace - Software Developer/JavaChallenge/Convertor/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="Application.AppConversor">
+    <configuration name="AppConversor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.alura.conversorchallenge.latam.AppConversor" />
+      <module name="Convertor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.alura.conversorchallenge.latam.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TempWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.alura.conversorchallenge.latam.TempWindow" />
+      <module name="Convertor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.alura.conversorchallenge.latam.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AppConversor" />
+        <item itemvalue="Application.TempWindow" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -34,19 +103,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689722157213</updated>
-      <workItem from="1689722158509" duration="3000" />
+      <workItem from="1689722158509" duration="3671000" />
+      <workItem from="1689725927847" duration="377000" />
+      <workItem from="1690215904317" duration="7493000" />
+      <workItem from="1690249239751" duration="2804000" />
+      <workItem from="1690333236814" duration="23000" />
+      <workItem from="1690333305883" duration="6963000" />
+      <workItem from="1690476802480" duration="1307000" />
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

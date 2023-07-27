@@ -1,4 +1,4 @@
-package com.alura.conversor.latam;
+package com.alura.conversorchallenge.latam;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -9,10 +9,11 @@ public class AppConversor extends JFrame{
     private JLabel panelHead;
     private JLabel panelConversor;
     private JButton btnExit;
-    private JLabel labelNameCreartor;
+    private JLabel labelNameCreator;
     private JButton btnCurrency;
     private JButton btnTemperature;
-
+    private JButton btnDistance;
+    private JButton btnTimeZone;
 
     public AppConversor() {
         btnExit.addActionListener(new ActionListener() {
@@ -23,19 +24,40 @@ public class AppConversor extends JFrame{
                 }
             }
         });
+        //Currency Action Listener
         btnCurrency.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if(e.getSource() == btnCurrency){
                     ExWindow exWindowApp = new ExWindow();
+
                 }
             }
         });
+        //Temperature Action Listener
         btnTemperature.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if(e.getSource() == btnTemperature){
                     TempWindow tempWindow = new TempWindow();
+                }
+            }
+        });
+        //Time Zone Action Listener
+        btnTimeZone.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(e.getSource() == btnTimeZone) {
+                    TimeZoneWindow timeZoneWindow = new TimeZoneWindow();
+                }
+            }
+        });
+        //Distance Action Listener
+        btnDistance.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(e.getSource() == btnDistance) {
+                    DistWindow distWindow = new DistWindow();
                 }
             }
         });
@@ -52,6 +74,5 @@ public class AppConversor extends JFrame{
         appConversor.setResizable(false);
         appConversor.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
-
 }
 
